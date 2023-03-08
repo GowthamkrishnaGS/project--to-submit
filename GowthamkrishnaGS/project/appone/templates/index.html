@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        {% load static %}
+    </head>
+    <style>
+        *{
+	        margin: 0;
+	        padding: 0;
+        }
+        body{
+	        background: #06014d;
+	        font-size: 20px;
+	        font-family: Helvetica Neue;
+	        font-weight: lighter;
+	        text-align: center;
+	        padding: 40px;
+	        color: #333;
+        }
+        #container{
+	        width: 600px;
+	        margin: 0 auto;
+        }
+        .content{
+	        padding: 20px;
+	        margin: 20px 0;
+        }
+        #content{
+	        border: solid 10px black;
+        }
+        form{
+	        text-align: left;
+	        width: 300px;
+	        margin: 20px auto 0;
+        }
+        form input{
+	        display: block;
+	        width: 290px;
+	        padding: 5px;
+	        margin: 0 0 10px;
+	        font-size: 15px;
+	        font-family: Georgia;
+	        font-style: italic;
+	        border: none;
+        }
+        form input[type="submit"]{
+	        background: #2ddffa;
+	        color: white;
+	        cursor: pointer;
+	        width: 300px;
+        }
+        .footer{
+	        background: #f5f7f7;
+	        margin: solid 1px white;
+        }
+        h6{
+            color: blue;
+        }
+        h1{
+            color: white;
+        }
+    </style>
+    <body>
+        <body>
+        <div id="container">
+            <div class="header">
+                <h1>Give Practice to a python coder inside you!</h1>
+
+            </div>
+            <div class="content">
+                <form action="codepage" autocomplete="off">
+                    <fieldset>
+
+                        <input type="text" name="your name" placeholder="User name or e_mail" id="name">
+                        <input type="password" placeholder="password" name="password" id="pass">
+
+                        <input type="submit" value="Log_in" id="log">
+                        <h6>Forgot password!</h6>
+                    </fieldset>
+                </form>
+                <form action="sign" autocomplete="off">
+                    <h5><input type="submit" value="master log_in!"></h5>
+                </form>
+            </div>
+            <div class="footer">
+                <h5>Don't have a account?</h5>
+                <h6>Sign up</h6>
+            </div>
+        </div>
+    </body>
+</html>

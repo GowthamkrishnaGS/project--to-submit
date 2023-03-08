@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>master page!</title>
+    </head>
+    <style>
+        body{
+	        background: #06014d;
+	        font-family: Helvetica Neue;
+	        font-weight: lighter;
+	        text-align: center;
+	        padding: 40px;
+	        color: #333;
+        }
+        input[type="text"]{
+	        padding: 2px;
+	        margin: 5px;
+        }
+        input[type="password"]{
+	        padding: 2px;
+        }
+        input[type="submit"]{
+	        margin: 5px;
+        }
+        .container{
+	        width: 600px;
+	        margin: auto;
+        }
+        legend{
+            color: white;
+        }
+        h4{
+            color: #cbc9d6;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <form class="content" action="/last" autocomplete="off">
+                <fieldset>
+                    <legend>Masters Log_in!</legend>
+                    <input type="text" placeholder="User name or e_mail" id="name"><br>
+                    <input type="password" id="pass"><br>
+
+                    <input type="submit" value="Log_in" id="log">
+                    <h4>Forgot password!</h4>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
